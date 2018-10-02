@@ -63,7 +63,7 @@ There is also an alternative editing view that can be accessed by adding ?simple
 Installation
 ------------
 
-No configuration should be needed as long as mod_rewrite is enabled and the web server is allowed to write to the `_notes` directory. All the notes are stored as text files so a server running Apache (or Nginx) should be enough, no databases required.
+No configuration should be needed as long as mod_rewrite is enabled and the web server is allowed to write to the `_notes` data directory. All the notes are stored as text files so a server running Apache (or Nginx) should be enough, no databases required.
 
 There may be scenarios where the $base_url variable in `config.php` needs to be replaced with the hardcoded URL path of your installation. If that is the case just replace the line in `config.php` beginning with  `$base_url = dirname('//'` with `$base_url ='http://actualURL.com/notes'` replacing actualURL.com/notes with whatever is relevant for your installation.
 
