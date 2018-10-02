@@ -1,0 +1,14 @@
+.savedStatus {
+  /* bottomRightCorner */
+  font-size: 100%;
+  font-family: monospace;
+  position: absolute;
+  bottom: 1px;
+  right: 20px;
+}
+
+@media print {
+  .savedStatus {
+    display: none;
+  }
+}
