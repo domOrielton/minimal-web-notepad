@@ -5,7 +5,11 @@ header('Cache-Control: no-cache, no-store, must-revalidate');
 header('Pragma: no-cache');
 header('Expires: 0');
 
-$path = '_notes/' . $_GET['note'];
+//  configuration settings, edit settings in config.php as appropriate
+// settings include the base url, the notes path and the menu items displayed
+include('config.php');
+
+$path = $data_directory . $_GET['note'];
 
 include 'modules/header.php';
 
