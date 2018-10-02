@@ -1,7 +1,7 @@
 <?php
 
 //  configuration settings, edit settings in config.php as appropriate
-// settings include the base url and the menu items displayed
+// settings include the base url, the notes path and the menu items displayed
 include('config.php');
 
 // Disable caching.
@@ -17,7 +17,7 @@ if (!isset($_GET['note']) || !preg_match('/^([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)$/', $
     die;
 }
 
-$path = '_notes/' . $_GET['note'];
+$path = $data_directory . $_GET['note'];
 
 $include_Header = true; //required for password protected notes
 include 'modules/header.php';
