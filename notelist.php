@@ -5,10 +5,10 @@ Protect\with('modules/protect_form.php', 'put your password here');
 <!DOCTYPE html>
 <html>
 <head>
-	<?php
+<?php
 
-		//  configuration settings, edit settings in config.php as appropriate
-		include('config.php');
+    //  configuration settings, edit settings in config.php as appropriate
+   include('config.php');
 
     // from https://stackoverflow.com/questions/16765158/date-it-is-not-safe-to-rely-on-the-systems-timezone-settings
     if (! ini_get('date.timezone')) {
@@ -16,7 +16,7 @@ Protect\with('modules/protect_form.php', 'put your password here');
     }
 
     // Directory to save user documents.
-    $data_directory = '_notes';
+    // $data_directory = '_notes'; defined in config.php
 
     $serverTimezone = "";
     if (ini_get('date.timezone')) {
