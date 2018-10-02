@@ -1,6 +1,6 @@
 <?php
 require_once 'modules/protect.php';
-Protect\with('modules/protect_form.php', 'notes');
+Protect\with('modules/protect_form.php', 'put your password here');
 ?>
 <!DOCTYPE html>
 <html>
