@@ -1,6 +1,7 @@
 <?php
 
 //  configuration settings, edit settings in config.php as appropriate
+// settings include the base url, the notes path and the menu items displayed
 include('config.php');
 
 // Disable caching.
@@ -12,13 +13,11 @@ header('Expires: 0');
 if (!isset($_GET['note']) || !preg_match('/^([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)$/', $_GET['note'])) {
 
     // Generate a name with 5 random unambiguous characters. Redirect to it.
-    // Base URL of the website, without trailing slash. This can be hardcoded if PHP_SELF doesn't work for you
-    $base_url  = dirname($_SERVER['PHP_SELF']);
     header("Location: $base_url/" . substr(str_shuffle('012345679abcdefghjkmnpqrstwxyz'), -5));
     die;
 }
 
-$path = '_notes/' . $_GET['note'];
+$path = $data_directory . $_GET['note'];
 
 $include_Header = true;
 $allow_password = true; // to work with files that already have a password set
