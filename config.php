@@ -9,6 +9,9 @@
 //   was dirname($_SERVER['PHP_SELF']) but this fails for installs in the root folder
 $base_url = dirname('//'.htmlspecialchars($_SERVER['HTTP_HOST']).$_SERVER['PHP_SELF']); 
 
+// the folder where the notes are stored.
+$data_directory = '_notes/';
+
 //  configuration settings - controls what menu items (and functionality) is enabled
 $allow_menu = true;
 $allow_noteslist = true; //show the notelist option on the footer menu
