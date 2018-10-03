@@ -15,7 +15,7 @@ Added functionality to [pereorga's](https://github.com/pereorga/minimalist-web-n
  - view note in sans-serif or mono font
  - ability to download note
  - list of available notes
- - turn features on and off to reduce page size of needed
+ - turn features on and off to reduce page size if needed
 
 See demo at http://note.rf.gd/ or http://note.rf.gd/some-note-name-here.
 
