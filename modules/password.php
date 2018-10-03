@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="modules/css/modal.min.css">
-<div class="modal_password" id="password_modal" style="hidden">
+<div class="modal_password hidden" id="password_modal" style="hidden">
 	<div class="modal-content">
 		<span class="close-button_password">&times;</span>
 		<br>Password for this note<br>
