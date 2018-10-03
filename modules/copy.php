@@ -1,4 +1,4 @@
-<div class="modal_copy" id="copy_modal" style="hidden">
+<div class="modal_copy hidden" id="copy_modal">
 	<div class="modal-content">
 		<span class="close-button_copy">&times;</span>
 		<br>
