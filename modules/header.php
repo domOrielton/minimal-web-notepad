@@ -90,7 +90,6 @@ function setHeader($allow_password)
     $header = "[header] " . "&noteName=" . $_GET['note'] .  "&noteHash=" . $noteHash; // create the basic header content, really just an identifier
     $pwd = "";
     if ($allow_password) {
-        //$pwd = "&password=" . $passwordhash . "&pwd=" . (isset($_POST['notepwd']) ? $_POST['notepwd'] : '');
         $pwd = "&password=" . $passwordhash; //. "&pwd=" . (isset($_POST['notepwd']) ? $_POST['notepwd'] : '');
         $_SESSION[$session_key] = true;
         $_SESSION[$session_key.'hash'] = $passwordhash;
