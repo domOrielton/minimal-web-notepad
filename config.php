@@ -9,7 +9,9 @@
 //   was dirname($_SERVER['PHP_SELF']) but this fails for installs in the root folder
 $base_url = dirname('//'.htmlspecialchars($_SERVER['HTTP_HOST']).$_SERVER['PHP_SELF']); 
 
-// the folder where the notes are stored.
+// the folder where the notes are stored
+// if you have existing installation from pereorga/minimalist-web-notepad
+// then change '_notes/' to '_tmp/' to use existing notes
 $data_directory = '_notes/';
 
 //  configuration settings - controls what menu items (and functionality) is enabled
