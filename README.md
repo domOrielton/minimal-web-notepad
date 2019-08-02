@@ -65,6 +65,9 @@ Installation
 
 No configuration should be needed as long as mod_rewrite is enabled and the web server is allowed to write to the `_notes` data directory. This data directory is set in config.php so if you want to change it to the folder used by the original pereorga/minimalist-web-notepad version then change it there. All the notes are stored as text files so a server running Apache (or Nginx) should be enough, no databases required.
 
+If notes aren't saving then please check the permissions on the `_notes` directory - 0755 or 744 should be all that is needed.
+![permissions screenshot](https://raw.github.com/domOrielton/minimal-web-notepad/screenshots/mn_permissions.png)
+
 There may be scenarios where the $base_url variable in `config.php` needs to be replaced with the hardcoded URL path of your installation. If that is the case just replace the line in `config.php` beginning with  `$base_url = dirname('//'` with `$base_url ='http://actualURL.com/notes'` replacing actualURL.com/notes with whatever is relevant for your installation.
 
 ### On Apache
