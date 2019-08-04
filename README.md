@@ -5,7 +5,7 @@ This is a fork of the excellent [pereorga/minimalist-web-notepad](https://github
 
 ![edit screenshot](https://raw.github.com/domOrielton/minimal-web-notepad/screenshots/mn_edit.png)
 
-Added functionality to [pereorga's](https://github.com/pereorga/minimalist-web-notepad) excellent original:
+Added functionality to [pereorga's](https://github.com/pereorga/minimalist-web-notepad) original:
 
  - view option for note with URLs hyperlinked (very useful for mobile)
  - password protection with option for read only access
