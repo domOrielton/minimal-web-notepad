@@ -63,13 +63,13 @@ There is also an alternative editing view that can be accessed by adding ?simple
 Installation
 ------------
 
-No configuration should be needed as long as mod_rewrite is enabled and the web server is allowed to write to the `_notes` data directory. This data directory is set in config.php so if you want to change it to the folder used by the original pereorga/minimalist-web-notepad version then change it there. All the notes are stored as text files so a server running Apache (or Nginx) should be enough, no databases required.
+No configuration should be needed as long as mod_rewrite is enabled and the web server is allowed to write to the `_notes` data directory. This data directory is set in `config.php` so if you want to change it to the folder used by the original pereorga/minimalist-web-notepad version then change it there. All the notes are stored as text files so a server running Apache (or Nginx) should be enough, no databases required.
 
 If notes aren't saving then please check the permissions on the `_notes` directory - 0755 or 744 should be all that is needed.
 
 ![permissions screenshot](https://raw.github.com/domOrielton/minimal-web-notepad/screenshots/mn_permissions.png)
 
-There is also a setup.php page that can be used to check the `_notes` directory exists and can be written to. If you are having difficulty saving notes it may be worth deleting the `_notes` directory and then going to the setup.php page to create the folder. If all is working ok then you can delete the setup.php file if you wish.
+There is also a `setup.php` page that can be used to check the `_notes` directory exists and can be written to. If you are having difficulty saving notes it may be worth deleting the `_notes` directory and then going to the `setup.php` page to create the folder. If all is working ok then you can delete the `setup.php` file if you wish.
 
 There may be scenarios where the $base_url variable in `config.php` needs to be replaced with the hardcoded URL path of your installation. If that is the case just replace the line in `config.php` beginning with  `$base_url = dirname('//'` with `$base_url ='http://actualURL.com/notes'` replacing actualURL.com/notes with whatever is relevant for your installation.
 
