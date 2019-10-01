@@ -1,7 +1,7 @@
 
 # minimal-web-notepad
 
-This is a fork of the excellent [pereorga/minimalist-web-notepad](https://github.com/pereorga/minimalist-web-notepad) with additional functionality - the additional code does add size so not minimalist but still minimal at 10kb when minified and gzipped. If you want to go really minimalist then pereorga's implementation is under 3kb and that's not even minified! Password functionality is implemented by adding a header line to the text file which isn't displayed on the note. The only server requirements are an Apache webserver with mod_rewrite and PHP enabled.
+This is a fork of the excellent [pereorga/minimalist-web-notepad](https://github.com/pereorga/minimalist-web-notepad) with additional functionality - the additional code does add size so not minimalist but still minimal at 10kb when minified and gzipped. If you want to go really minimalist then pereorga's implementation is under 3kb and that's not even minified! Password functionality is implemented by adding a header line to the text file which isn't displayed on the note ** be aware this does not encypt the contents, just limits access ** . The only server requirements are an Apache webserver with mod_rewrite and PHP enabled.
 
 ![edit screenshot](https://raw.github.com/domOrielton/minimal-web-notepad/screenshots/mn_edit.png)
 
