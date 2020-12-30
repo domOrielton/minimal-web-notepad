@@ -81,4 +81,4 @@ See [How To Set Up mod_rewrite for Apache](https://www.digitalocean.com/communit
 ## On nginx
 
 On nginx, you will need to ensure nginx.conf is configured correctly to ensure the application works as expected.
-Please check the nginx.conf.example file or the view without [password issue](https://github.com/domOrielton/minimal-web-notepad/issues/4). Credit to [eonegh](https://github.com/eonegh) for the example file.
+Please check the nginx.conf.example file or the [view without password issue](https://github.com/domOrielton/minimal-web-notepad/issues/4). Credit to [eonegh](https://github.com/eonegh) for the example file.
