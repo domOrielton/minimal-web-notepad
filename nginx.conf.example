@@ -1,0 +1,15 @@
+# this is just an example of what is reuired in the nginx.conf file to support url rewrite
+# ensure the location matches the location minimal-web-notepad is served from
+# example based on solution from @eonegh - see https://github.com/domOrielton/minimal-web-notepad/issues/4 
+
+location / {
+    if ($query_string ~ "^view") {
+        rewrite ^/([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)$ /view.php?note=$1 last;
+    }
+    if ($query_string ~ "^simple") {
+        rewrite ^/([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)$ /simple.php?note=$1 last;
+    }
+    rewrite ^/([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)$ /index.php?note=$1 last;
+   }
+}
+add_header  X-Robots-Tag "noindex, nofollow, nosnippet, noarchive";
