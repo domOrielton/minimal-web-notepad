@@ -77,3 +77,8 @@ There may be scenarios where the $base_url variable in `config.php` needs to be 
 
 You may need to enable mod_rewrite and set up `.htaccess` files in your site configuration.
 See [How To Set Up mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_rewrite-for-apache-on-ubuntu-14-04).
+
+## On nginx
+
+On nginx, you will need to ensure nginx.conf is configured correctly to ensure the application works as expected.
+Please check the nginx.conf.example file or the view without [password issue](https://github.com/domOrielton/minimal-web-notepad/issues/4). Credit to [eonegh](https://github.com/eonegh) for the example file.
